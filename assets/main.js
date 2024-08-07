@@ -25,32 +25,33 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     req.send()
   }
+
   // Emtt search box
   document.querySelector('.empty').addEventListener('click', function() {
-	document.querySelector('.search').value = ''; // Vacía el valor del input
-	this.style.display = 'none'; // Oculta el botón de vacío
-	document.querySelectorAll('li').forEach(function(li) {
-	  li.style.display = ''; // Muestra todos los elementos de la lista
-	});
+	  document.querySelector('.search').value = ''; // Vacía el valor del input
+	  this.style.display = 'none'; // Oculta el botón de vacío
+	  document.querySelectorAll('li').forEach(function(li) {
+      li.style.display = ''; // Muestra todos los elementos de la lista
+    });
   });
   // Search
   document.querySelector('.search').addEventListener('keyup', function() {
-	var val = this.value.toLowerCase(); // Obtiene y convierte el valor del input a minúsculas
+    var val = this.value.toLowerCase(); // Obtiene y convierte el valor del input a minúsculas
 
-	if (val.length > 0) { 
-	  document.querySelector('.empty').style.display = 'inline'; // Muestra el botón de vacío si hay texto
-	} else {
+    if (val.length > 0) { 
+      document.querySelector('.empty').style.display = 'inline'; // Muestra el botón de vacío si hay texto
+	  } else {
       document.querySelector('.empty').style.display = 'none'; // Oculta el botón de vacío si no hay texto
-	}
+	  }
 
-	document.querySelectorAll('li').forEach(function(li) {
+	  document.querySelectorAll('li').forEach(function(li) {
       var text = li.textContent.toLowerCase(); // Obtiene y convierte el texto del elemento de la lista a minúsculas
       if (text.includes(val)) {
         li.style.display = ''; // Muestra el elemento si coincide con la búsqueda
       } else {
-      li.style.display = 'none'; // Oculta el elemento si no coincide con la búsqueda
+        li.style.display = 'none'; // Oculta el elemento si no coincide con la búsqueda
       }
-	});
+	  });
   });
 });
 

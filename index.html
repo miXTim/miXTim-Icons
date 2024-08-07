@@ -4,27 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>мiXTiм icons ㋡</title>
+  <title>мiXTiм Icons ㋡</title>
   <link rel="stylesheet" href="assets/styles.css">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-	<meta name="theme-color" content="#026" media="prefers-color-scheme: dark light">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+	<meta name="theme-color" content="#026" media="prefers-color-scheme: dark">
 </head>
 <body>
 	<div class="progress-container">
 		<div id="progress"></div>
 	</div>
+	<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0">
+		<filter id="noise-fx">
+			<feTurbulence baseFrequency="0.45"></feTurbulence>
+		</filter>
+	</svg>
 
   <div class="wrapper img_bg">
-		<svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0">
-      <filter id="noise-fx">
-        <feTurbulence baseFrequency="0.45"></feTurbulence>
-      </filter>
-    </svg>
-		<main>
-			<h1 class="First">miXTim icons</h1>
+		<header>
+			<h1 class="First">miXTim Icons</h1>
 			<h2 class="Second">Recopilación de iconos SVG originales</h2>
+		</header>
+		<main>
 			<form class="search-box">
-				<input class="search" placeholder="Buscar icono..." id="buscar" aria-label="buscar">
+				<input class="search" placeholder="&#128269;Buscar icono..." id="buscar" aria-label="buscar">
 				<span class="empty" style="display: none;">×</span>
 			</form>
 
@@ -471,15 +473,9 @@
 				</li>
 				<li class="icon">
 					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-shield_o"></use></svg>
+						<svg class="my-icon" focusable="false"><use href="#icon-shield"></use></svg>
 					</i>
-					<span>shield_o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-shield-o"></use></svg>
-					</i>
-					<span>shield-o</span>
+					<span>shield</span>
 				</li>
 				<li class="icon">
 					<i>
@@ -489,9 +485,15 @@
 				</li>
 				<li class="icon">
 					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-shield"></use></svg>
+						<svg class="my-icon" focusable="false"><use href="#icon-shield-o"></use></svg>
 					</i>
-					<span>shield</span>
+					<span>shield-o</span>
+				</li>
+				<li class="icon">
+					<i>
+						<svg class="my-icon" focusable="false"><use href="#icon-shield_o"></use></svg>
+					</i>
+					<span>shield_o</span>
 				</li>
 				<li class="icon">
 					<i>
@@ -516,18 +518,6 @@
 						<svg class="my-icon" focusable="false"><use href="#icon-bag"></use></svg>
 					</i>
 					<span>bag</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-transport"></use></svg>
-					</i>
-					<span>transport</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-like"></use></svg>
-					</i>
-					<span>like</span>
 				</li>
 				<li class="icon">
 					<i>
@@ -576,6 +566,12 @@
 						<svg class="my-icon" focusable="false"><use href="#icon-clock"></use></svg>
 					</i>
 					<span>clock</span>
+				</li>
+				<li class="icon">
+					<i>
+						<svg class="my-icon" focusable="false"><use href="#icon-watch"></use></svg>
+					</i>
+					<span>watch</span>
 				</li>
 				<li class="icon">
 					<i>
@@ -693,6 +689,12 @@
 				</li>
 				<li class="icon">
 					<i>
+						<svg class="my-icon" focusable="false"><use href="#icon-stars"></use></svg>
+					</i>
+					<span>stars</span>
+				</li>
+				<li class="icon">
+					<i>
 						<svg class="my-icon" focusable="false"><use href="#icon-phone"></use></svg>
 					</i>
 					<span>phone</span>
@@ -732,6 +734,12 @@
 						<svg class="my-icon" focusable="false"><use href="#icon-monitor"></use></svg>
 					</i>
 					<span>monitor</span>
+				</li>
+				<li class="icon">
+					<i>
+						<svg class="my-icon" focusable="false"><use href="#icon-battery"></use></svg>
+					</i>
+					<span>battery</span>
 				</li>
 				<li class="icon">
 					<i>
@@ -927,9 +935,9 @@
 				</li>
 				<li class="icon">
 					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-battery"></use></svg>
+						<svg class="my-icon" focusable="false"><use href="#icon-chat-o"></use></svg>
 					</i>
-					<span>battery</span>
+					<span>chat-o</span>
 				</li>
 				<li class="icon">
 					<i>
@@ -1027,16 +1035,10 @@
 					</i>
 					<span>php</span>
 				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-coder"></use></svg>
-					</i>
-					<span>coder</span>
-				</li>
 			</ul>
 		</main>
+		<footer>Coded with passion&#x1F49B; by miXTim &copy;2024</footer>
   </div>	<!-- .wrapper -->
-	<footer>Coded with passion&#x1F49B; by miXTim &copy;2024</footer>
   
 	<script src="assets/main.js"></script>
 </body>
