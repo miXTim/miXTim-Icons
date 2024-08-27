@@ -6,6 +6,11 @@
 html {
   color-scheme: dark;
   box-sizing: border-box;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 html, body {
   height: 100%;
@@ -75,7 +80,14 @@ h1 + h2 {
 	  font-size: clamp(1rem, 4vw - 1rem, 1.5rem);
   }
 }
+a { text-decoration:none;}
+header { padding-top: 3rem;}
 header, footer { text-align: center;}
+footer {
+	position: relative;
+	padding-bottom: 3rem;
+	z-index: 1;
+}
 /* ------------------------ */
 @-webkit-keyframes fade {
   from {
@@ -155,7 +167,6 @@ header, footer { text-align: center;}
 .wrapper {
   container-type: inline-size;
   min-height: calc(100% - 2rem);
-  padding: 3rem 1rem;
 }
 .wrapper::after {
   content: '';
