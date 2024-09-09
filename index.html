@@ -1,1364 +1,1786 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>мiXTiм Icons ㋡</title>
-  <link rel="stylesheet" href="assets/styles.css">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-	<meta name="theme-color" content="#024" media="prefers-color-scheme: dark">
-</head>
-<body>
-	<div class="progress-container">
-		<div id="progress"></div>
-	</div>
-	<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0">
-		<filter id="noise-fx">
-			<feTurbulence baseFrequency="0.45"></feTurbulence>
-		</filter>
-	</svg>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>мiXTiм Icons ㋡</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="assets/styles.css" />
+    <meta name="description" content="Custom SVG icons collection. Fully featured search onpage with outstanding performance and supporting light/dark theme switch.">
+    <meta name="keywords" content="icon,icons,color-scheme,search onpage,CSS3,Javascript,Native Javascript,vanilla javascript,UI/UX,front">
+    <meta name="author" content="miXTim-https://behance.net/juandemegiasroca">
+    <meta name="theme-color" content="#024" media="prefers-color-scheme: dark light" />
+    <link rel="icon" href="./favicon.ico" sizes="any">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <div class="progress-container">
+      <div id="progress"></div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="width: 0; height: 0;position: absolute">
+      <filter id="noise-fx">
+        <feTurbulence baseFrequency="0.45"></feTurbulence>
+      </filter>
+    </svg>
+    <button id="theme-switch">
+      <svg width="24" height="24" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="m9.82 .11c-5.78 2.63-9.82 8.47-9.82 15.2 0 9.17 7.51 16.69 16.68 16.69 6.73 0 12.57-4.04 15.2-9.82 .49-1.08-.61-2.19-1.69-1.7-5.19 2.32-11.53 1.37-15.78-2.88-4.25-4.25-5.2-10.59-2.88-15.79 .49-1.09-.65-2.17-1.7-1.69z"/></svg>
+	  <svg width="24" height="24" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+		<g style="stroke:#001830">
+		 <path d="m5.47 5.86 2.39 2.39m15.9 15.9 2.39 2.39m0-20.87-2.39 2.39m-15.9 15.9-2.39 2.39m-3.975-10.34h3.58m21.86 0h3.58m-14.51-14.51v3.58m0 21.86v3.58" stroke-linecap="round" stroke-width="3"/>
+		 <path d="m19.975 16c0 5.3-7.95 5.3-7.95 0 0-5.3 7.95-5.3 7.95 0z" stroke-width="8"/></g>
+	  </svg>
+    </button>
 
-  <div class="wrapper img_bg">
-		<header id="top">
-			<h1 class="First">miXTim <span>icons</span><br>COLLECTION</h1>
-			<h2 class="Second">Recopilación de iconos SVG originales</h2>
-		</header>
-		<main>
-			<form class="search-box">
-				<input class="search" placeholder="&#128269;Buscar icono..." id="buscar" aria-label="buscar">
-				<span class="empty" style="display: none;">×</span>
-			</form>
+    <div class="wrapper img_bg">
+      <header>
+        <h1 class="First">
+          miXTim <span>icons</span> <br /><u>COMPILATION</u>
+        </h1>
+        <h2 class="Second">215 Free Custom SVG Icons</h2>
+      </header>
+      <main>
+        <form class="search-box">
+          <input class="search" id="buscar"
+            placeholder="&#x1F50D;Search icon..." aria-label="search"/>
+          <span class="empty" style="display: none">×</span>
+        </form>
 
-			<ul class="grid">
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-arrow-1"></use>
-						</svg>
-					</i>
-					<span>arrow-1</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-arrow-2"></use>
-						</svg>
-					</i>
-					<span>arrow-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-arrow-3"></use>
-						</svg>
-					</i>
-					<span>arrow-3</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-undo"></use>
-						</svg>
-					</i>
-					<span>undo</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-caret-u"></use>
-						</svg>
-					</i>
-					<span>caret-u</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-caret-d"></use>
-						</svg>
-					</i>
-					<span>caret-d</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-caret-l"></use>
-						</svg>
-					</i>
-					<span>caret-l</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-caret-r"></use>
-						</svg>
-					</i>
-					<span>caret-r</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-caret-u-o"></use>
-						</svg>
-					</i>
-					<span>caret-u-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-caret-d-o"></use>
-						</svg>
-					</i>
-					<span>caret-d-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-caret-l-o"></use>
-						</svg>
-					</i>
-					<span>caret-l-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-caret-r-o"></use>
-						</svg>
-					</i>
-					<span>caret-r-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-arrow-4-o"></use>
-						</svg>
-					</i>
-					<span>arrow-4-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-arrow-5-o"></use>
-						</svg>
-					</i>
-					<span>arrow-5-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-plus"></use>
-						</svg>
-					</i>
-					<span>plus</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-minus"></use>
-						</svg>
-					</i>
-					<span>minus</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-times"></use>
-						</svg>
-					</i>
-					<span>times</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-times-o"></use>
-						</svg>
-					</i>
-					<span>times-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-checkbox"></use>
-						</svg>
-					</i>
-					<span>checkbox</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-check"></use>
-						</svg>
-					</i>
-					<span>check</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-chevron-d"></use>
-						</svg>
-					</i>
-					<span>chevron-d</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-chevron-u"></use>
-						</svg>
-					</i>
-					<span>chevron-u</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-chevron-l"></use>
-						</svg>
-					</i>
-					<span>chevron-l</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-chevron-r"></use>
-						</svg>
-					</i>
-					<span>chevron-r</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-arrow-slant"></use>
-						</svg>
-					</i>
-					<span>arrow-slant</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-gotop"></use>
-						</svg>
-					</i>
-					<span>gotop</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-gotop-2"></use>
-						</svg>
-					</i>
-					<span>gotop-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-download"></use>
-						</svg>
-					</i>
-					<span>download</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-login"></use>
-						</svg>
-					</i>
-					<span>login</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-logout"></use>
-						</svg>
-					</i>
-					<span>logout</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-login-o"></use>
-						</svg>
-					</i>
-					<span>login-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-logout-o"></use>
-						</svg>
-					</i>
-					<span>logout-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-fullin"></use>
-						</svg>
-					</i>
-					<span>fullin</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-fullout"></use>
-						</svg>
-					</i>
-					<span>fullout</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-fullin-2"></use>
-						</svg>
-					</i>
-					<span>fullin-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-fullout-2"></use>
-						</svg>
-					</i>
-					<span>fullout-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-launch"></use>
-						</svg>
-					</i>
-					<span>launch</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-link"></use>
-						</svg>
-					</i>
-					<span>link</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-share"></use>
-						</svg>
-					</i>
-					<span>share</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-share-o"></use>
-						</svg>
-					</i>
-					<span>share-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-smiley"></use>
-						</svg>
-					</i>
-					<span>smiley</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-user"></use>
-						</svg>
-					</i>
-					<span>user</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-user-o"></use>
-						</svg>
-					</i>
-					<span>user-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-user-2"></use>
-						</svg>
-					</i>
-					<span>user-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-users"></use>
-						</svg>
-					</i>
-					<span>users</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-group"></use>
-						</svg>
-					</i>
-					<span>group</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-disabled"></use>
-						</svg>
-					</i>
-					<span>disabled</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-donate"></use>
-						</svg>
-					</i>
-					<span>donate</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-eye"></use>
-						</svg>
-					</i>
-					<span>eye</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-eye_"></use>
-						</svg>
-					</i>
-					<span>eye_</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-loupe"></use></svg>
-					</i>
-					<span>loupe</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-fingerprint"></use>
-						</svg>
-					</i>
-					<span>fingerprint</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false">
-							<use href="#icon-world"></use>
-						</svg>
-					</i>
-					<span>world</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-pin"></use></svg>
-					</i>
-					<span>pin</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-pin-o"></use></svg>
-					</i>
-					<span>pin-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-home-o"></use></svg>
-					</i>
-					<span>home-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-home"></use></svg>
-					</i>
-					<span>home</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-padlock"></use></svg>
-					</i>
-					<span>padlock</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-key"></use></svg>
-					</i>
-					<span>key</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-shield"></use></svg>
-					</i>
-					<span>shield</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-shield-x"></use></svg>
-					</i>
-					<span>shield-x</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-shield-o"></use></svg>
-					</i>
-					<span>shield-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-shield_o"></use></svg>
-					</i>
-					<span>shield_o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-money"></use></svg>
-					</i>
-					<span>money</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-card"></use></svg>
-					</i>
-					<span>card</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-case"></use></svg>
-					</i>
-					<span>case</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-bag"></use></svg>
-					</i>
-					<span>bag</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-badge"></use></svg>
-					</i>
-					<span>badge</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-circle-o"></use></svg>
-					</i>
-					<span>circle-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-arrow-o"></use></svg>
-					</i>
-					<span>arrow-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-help"></use></svg>
-					</i>
-					<span>help</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-warning"></use></svg>
-					</i>
-					<span>warning</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-info"></use></svg>
-					</i>
-					<span>info</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-calendar"></use></svg>
-					</i>
-					<span>calendar</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-clock"></use></svg>
-					</i>
-					<span>clock</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-watch"></use></svg>
-					</i>
-					<span>watch</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-book"></use></svg>
-					</i>
-					<span>book</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-book-open"></use></svg>
-					</i>
-					<span>book-open</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-agenda"></use></svg>
-					</i>
-					<span>agenda</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-pen"></use></svg>
-					</i>
-					<span>pen</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-pencil"></use></svg>
-					</i>
-					<span>pencil</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-pen-2"></use></svg>
-					</i>
-					<span>pen-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-pencil-2"></use></svg>
-					</i>
-					<span>pencil-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-rule"></use></svg>
-					</i>
-					<span>rule</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-brush"></use></svg>
-					</i>
-					<span>brush</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-palette"></use></svg>
-					</i>
-					<span>palette</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-grunepunkte"></use></svg>
-					</i>
-					<span>grunepunkte</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-recycle"></use></svg>
-					</i>
-					<span>recycle</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-recycle-o"></use></svg>
-					</i>
-					<span>recycle-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-contrast"></use></svg>
-					</i>
-					<span>contrast</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-lum-less"></use></svg>
-					</i>
-					<span>lum-less</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-lum-more"></use></svg>
-					</i>
-					<span>lum-more</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-star-o"></use></svg>
-					</i>
-					<span>star-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-star-half"></use></svg>
-					</i>
-					<span>star-half</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-star"></use></svg>
-					</i>
-					<span>star</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-stars"></use></svg>
-					</i>
-					<span>stars</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-sun"></use></svg>
-					</i>
-					<span>sun</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-moon"></use></svg>
-					</i>
-					<span>moon</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-cloud"></use></svg>
-					</i>
-					<span>cloud</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-phone"></use></svg>
-					</i>
-					<span>phone</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-phone-talk"></use></svg>
-					</i>
-					<span>phone-talk</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-mobile"></use></svg>
-					</i>
-					<span>mobile</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-mobile-2"></use></svg>
-					</i>
-					<span>mobile-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-tablet"></use></svg>
-					</i>
-					<span>tablet</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-laptop"></use></svg>
-					</i>
-					<span>laptop</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-monitor"></use></svg>
-					</i>
-					<span>monitor</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-battery"></use></svg>
-					</i>
-					<span>battery</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-signal"></use></svg>
-					</i>
-					<span>signal</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-settings"></use></svg>
-					</i>
-					<span>settings</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-settings-o"></use></svg>
-					</i>
-					<span>settings-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-process"></use></svg>
-					</i>
-					<span>process</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-process-o"></use></svg>
-					</i>
-					<span>process-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-science"></use></svg>
-					</i>
-					<span>science</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-bulb"></use></svg>
-					</i>
-					<span>bulb</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-lightbulb"></use></svg>
-					</i>
-					<span>lightbulb</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-stats"></use></svg>
-					</i>
-					<span>stats</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-stats-2"></use></svg>
-					</i>
-					<span>stats-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-stats-o"></use></svg>
-					</i>
-					<span>stats-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-stats-2-o"></use></svg>
-					</i>
-					<span>stats-2-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-print"></use></svg>
-					</i>
-					<span>print</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-images"></use></svg>
-					</i>
-					<span>images</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-grid"></use></svg>
-					</i>
-					<span>grid</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-grid-o"></use></svg>
-					</i>
-					<span>grid-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-masonry"></use></svg>
-					</i>
-					<span>masonry</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-cinema"></use></svg>
-					</i>
-					<span>cinema</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-play"></use></svg>
-					</i>
-					<span>play</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-camera"></use></svg>
-					</i>
-					<span>camera</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-video"></use></svg>
-					</i>
-					<span>video</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-microphone"></use></svg>
-					</i>
-					<span>microphone</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-clip"></use></svg>
-					</i>
-					<span>clip</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-envelope"></use></svg>
-					</i>
-					<span>envelope</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-menu"></use></svg>
-					</i>
-					<span>menu</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-list"></use></svg>
-					</i>
-					<span>list</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-menu-o"></use></svg>
-					</i>
-					<span>menu-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-chat"></use></svg>
-					</i>
-					<span>chat</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-chat-o"></use></svg>
-					</i>
-					<span>chat-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-garbage"></use></svg>
-					</i>
-					<span>garbage</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-folder"></use></svg>
-					</i>
-					<span>folder</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-cut-h"></use></svg>
-					</i>
-					<span>cut-h</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-cut-v"></use></svg>
-					</i>
-					<span>cut-v</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-copy"></use></svg>
-					</i>
-					<span>copy</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-paste"></use></svg>
-					</i>
-					<span>paste</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-document"></use></svg>
-					</i>
-					<span>document</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-openOffice"></use></svg>
-					</i>
-					<span>openOffice</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-pdf"></use></svg>
-					</i>
-					<span>pdf</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-css3"></use></svg>
-					</i>
-					<span>css3</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-css3-2"></use></svg>
-					</i>
-					<span>css3-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-html5"></use></svg>
-					</i>
-					<span>html5</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-html5-2"></use></svg>
-					</i>
-					<span>html5-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-node"></use></svg>
-					</i>
-					<span>node</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-javascript"></use></svg>
-					</i>
-					<span>javascript</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" focusable="false"><use href="#icon-php"></use></svg>
-					</i>
-					<span>php</span>
-				</li>
-	
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-coder"></use></svg>
-					</i>
-					<span>coder</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-git"></use></svg>
-					</i>
-					<span>git</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-codepen"></use></svg>
-					</i>
-					<span>codepen</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-stackOflow"></use></svg>
-					</i>
-					<span>stackOflow</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-behance"></use></svg>
-					</i>
-					<span>behance</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-blogger"></use></svg>
-					</i>
-					<span>blogger</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-deviantArt"></use></svg>
-					</i>
-					<span>deviantArt</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-facebook"></use></svg>
-					</i>
-					<span>facebook</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-flickr"></use></svg>
-					</i>
-					<span>flickr</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-github"></use></svg>
-					</i>
-					<span>github</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-inkscape"></use></svg>
-					</i>
-					<span>inkscape</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-instagram"></use></svg>
-					</i>
-					<span>instagram</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-linkedin"></use></svg>
-					</i>
-					<span>linkedin</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-pinterest"></use></svg>
-					</i>
-					<span>pinterest</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-wordpress"></use></svg>
-					</i>
-					<span>wordpress</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-x"></use></svg>
-					</i>
-					<span>X</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-debian"></use></svg>
-					</i>
-					<span>debian</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-windows"></use></svg>
-					</i>
-					<span>windows</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-apple"></use></svg>
-					</i>
-					<span>apple</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-android"></use></svg>
-					</i>
-					<span>android</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-drive"></use></svg>
-					</i>
-					<span>drive</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-chrome"></use></svg>
-					</i>
-					<span>chrome</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-edge"></use></svg>
-					</i>
-					<span>edge</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-firefox"></use></svg>
-					</i>
-					<span>firefox</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-opera"></use></svg>
-					</i>
-					<span>opera</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-safari"></use></svg>
-					</i>
-					<span>safari</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-brave"></use></svg>
-					</i>
-					<span>brave</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-behance-2"></use></svg>
-					</i>
-					<span>behance-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-blogger-2"></use></svg>
-					</i>
-					<span>blogger-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-blogger-3"></use></svg>
-					</i>
-					<span>blogger-3</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-codepen-2"></use></svg>
-					</i>
-					<span>codepen-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-deviantArt-2"></use></svg>
-					</i>
-					<span>deviantArt-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false">
-							<use href="#icon-facebook-2"></use>
-						</svg>
-					</i>
-					<span>facebook-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false">
-							<use href="#icon-flickr-2"></use>
-						</svg>
-					</i>
-					<span>flickr-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false">
-							<use href="#icon-instagram-2"></use>
-						</svg>
-					</i>
-					<span>instagram-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false">
-							<use href="#icon-linkedin-2"></use>
-						</svg>
-					</i>
-					<span>linkedin-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false">
-							<use href="#icon-paypal"></use>
-						</svg>
-					</i>
-					<span>paypal</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false">
-							<use href="#icon-pinterest-2"></use>
-						</svg>
-					</i>
-					<span>pinterest-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false">
-							<use href="#icon-whatsapp"></use>
-						</svg>
-					</i>
-					<span>whatsapp</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false">
-							<use href="#icon-wordpress-2"></use>
-						</svg>
-					</i>
-					<span>wordpress-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false">
-							<use href="#icon-x-2"></use>
-						</svg>
-					</i>
-					<span>X-2</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-youtube"></use></svg>
-					</i>
-					<span>youtube</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-like"></use></svg>
-					</i>
-					<span>like</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-heart"></use></svg>
-					</i>
-					<span>heart</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-heart-o"></use></svg>
-					</i>
-					<span>heart-o</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-nature"></use></svg>
-					</i>
-					<span>nature</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-transport"></use></svg>
-					</i>
-					<span>transport</span>
-				</li>
-				<li class="icon">
-					<i>
-						<svg class="my-icon" aria-hidden="true" focusable="false"><use href="#icon-monster"></use></svg>
-					</i>
-					<span>monster</span>
-				</li>
-			</ul>
-		</main>
-		<footer>Coded with passion<a href="#top" title="Volver arriba">&#x1F49B;</a> by miXTim &copy;2024</footer>
-  </div>	<!-- .wrapper -->
-  
-	<script src="assets/main.js"></script>
-</body>
+        <ul class="grid">
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-arrow-1"></use>
+              </svg>
+            </i>
+            <span>arrow-1</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-arrow-2"></use>
+              </svg>
+            </i>
+            <span>arrow-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-arrow-3"></use>
+              </svg>
+            </i>
+            <span>arrow-3</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-undo"></use>
+              </svg>
+            </i>
+            <span>undo</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-caret-u"></use>
+              </svg>
+            </i>
+            <span>caret-u</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-caret-d"></use>
+              </svg>
+            </i>
+            <span>caret-d</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-caret-l"></use>
+              </svg>
+            </i>
+            <span>caret-l</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-caret-r"></use>
+              </svg>
+            </i>
+            <span>caret-r</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-caret-u-o"></use>
+              </svg>
+            </i>
+            <span>caret-u-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-caret-d-o"></use>
+              </svg>
+            </i>
+            <span>caret-d-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-caret-l-o"></use>
+              </svg>
+            </i>
+            <span>caret-l-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-caret-r-o"></use>
+              </svg>
+            </i>
+            <span>caret-r-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-arrow-4-o"></use>
+              </svg>
+            </i>
+            <span>arrow-4-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-arrow-5-o"></use>
+              </svg>
+            </i>
+            <span>arrow-5-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-plus"></use>
+              </svg>
+            </i>
+            <span>plus</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-minus"></use>
+              </svg>
+            </i>
+            <span>minus</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-times"></use>
+              </svg>
+            </i>
+            <span>times</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-times-o"></use>
+              </svg>
+            </i>
+            <span>times-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-checkbox"></use>
+              </svg>
+            </i>
+            <span>checkbox</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-check"></use>
+              </svg>
+            </i>
+            <span>check</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-chevron-d"></use>
+              </svg>
+            </i>
+            <span>chevron-d</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-chevron-u"></use>
+              </svg>
+            </i>
+            <span>chevron-u</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-chevron-l"></use>
+              </svg>
+            </i>
+            <span>chevron-l</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-chevron-r"></use>
+              </svg>
+            </i>
+            <span>chevron-r</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-arrow-slant"></use>
+              </svg>
+            </i>
+            <span>arrow-slant</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-launch"></use>
+              </svg>
+            </i>
+            <span>launch</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-link"></use>
+              </svg>
+            </i>
+            <span>link</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-gotop"></use>
+              </svg>
+            </i>
+            <span>gotop</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-gotop-2"></use>
+              </svg>
+            </i>
+            <span>gotop-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-download"></use>
+              </svg>
+            </i>
+            <span>download</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-login"></use>
+              </svg>
+            </i>
+            <span>login</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-logout"></use>
+              </svg>
+            </i>
+            <span>logout</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-login-o"></use>
+              </svg>
+            </i>
+            <span>login-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-logout-o"></use>
+              </svg>
+            </i>
+            <span>logout-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-fullin"></use>
+              </svg>
+            </i>
+            <span>fullin</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-fullout"></use>
+              </svg>
+            </i>
+            <span>fullout</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-fullin-2"></use>
+              </svg>
+            </i>
+            <span>fullin-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-fullout-2"></use>
+              </svg>
+            </i>
+            <span>fullout-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-share"></use>
+              </svg>
+            </i>
+            <span>share</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-share-o"></use>
+              </svg>
+            </i>
+            <span>share-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-smiley"></use>
+              </svg>
+            </i>
+            <span>smiley</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-user"></use>
+              </svg>
+            </i>
+            <span>user</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-user-o"></use>
+              </svg>
+            </i>
+            <span>user-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-user-2"></use>
+              </svg>
+            </i>
+            <span>user-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-users"></use>
+              </svg>
+            </i>
+            <span>users</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-group"></use>
+              </svg>
+            </i>
+            <span>group</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-disabled"></use>
+              </svg>
+            </i>
+            <span>disabled</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-donate"></use>
+              </svg>
+            </i>
+            <span>donate</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-eye"></use>
+              </svg>
+            </i>
+            <span>eye</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-eye_"></use>
+              </svg>
+            </i>
+            <span>eye_</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-loupe"></use>
+              </svg>
+            </i>
+            <span>loupe</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-fingerprint"></use>
+              </svg>
+            </i>
+            <span>fingerprint</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-world"></use>
+              </svg>
+            </i>
+            <span>world</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-pin"></use>
+              </svg>
+            </i>
+            <span>pin</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-pin-o"></use>
+              </svg>
+            </i>
+            <span>pin-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-home-o"></use>
+              </svg>
+            </i>
+            <span>home-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-home"></use>
+              </svg>
+            </i>
+            <span>home</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-padlock"></use>
+              </svg>
+            </i>
+            <span>padlock</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-key"></use>
+              </svg>
+            </i>
+            <span>key</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-shield"></use>
+              </svg>
+            </i>
+            <span>shield</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-shield-x"></use>
+              </svg>
+            </i>
+            <span>shield-x</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-shield-o"></use>
+              </svg>
+            </i>
+            <span>shield-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-shield_o"></use>
+              </svg>
+            </i>
+            <span>shield_o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-money"></use>
+              </svg>
+            </i>
+            <span>money</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-card"></use>
+              </svg>
+            </i>
+            <span>card</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-case"></use>
+              </svg>
+            </i>
+            <span>case</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-bag"></use>
+              </svg>
+            </i>
+            <span>bag</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-badge"></use>
+              </svg>
+            </i>
+            <span>badge</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-circle-o"></use>
+              </svg>
+            </i>
+            <span>circle-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-arrow-o"></use>
+              </svg>
+            </i>
+            <span>arrow-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-help"></use>
+              </svg>
+            </i>
+            <span>help</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-warning"></use>
+              </svg>
+            </i>
+            <span>warning</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-info"></use>
+              </svg>
+            </i>
+            <span>info</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-calendar"></use>
+              </svg>
+            </i>
+            <span>calendar</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-clock"></use>
+              </svg>
+            </i>
+            <span>clock</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-watch"></use>
+              </svg>
+            </i>
+            <span>watch</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-book"></use>
+              </svg>
+            </i>
+            <span>book</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-book-open"></use>
+              </svg>
+            </i>
+            <span>book-open</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-agenda"></use>
+              </svg>
+            </i>
+            <span>agenda</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-pen"></use>
+              </svg>
+            </i>
+            <span>pen</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-pencil"></use>
+              </svg>
+            </i>
+            <span>pencil</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-pen-2"></use>
+              </svg>
+            </i>
+            <span>pen-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-pencil-2"></use>
+              </svg>
+            </i>
+            <span>pencil-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-rule"></use>
+              </svg>
+            </i>
+            <span>rule</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-brush"></use>
+              </svg>
+            </i>
+            <span>brush</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-palette"></use>
+              </svg>
+            </i>
+            <span>palette</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-grunepunkte"></use>
+              </svg>
+            </i>
+            <span>grunepunkte</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-recycle"></use>
+              </svg>
+            </i>
+            <span>recycle</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-recycle-o"></use>
+              </svg>
+            </i>
+            <span>recycle-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-contrast"></use>
+              </svg>
+            </i>
+            <span>contrast</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-lum-less"></use>
+              </svg>
+            </i>
+            <span>lum-less</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-lum-more"></use>
+              </svg>
+            </i>
+            <span>lum-more</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-star-o"></use>
+              </svg>
+            </i>
+            <span>star-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-star-half"></use>
+              </svg>
+            </i>
+            <span>star-half</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-star"></use>
+              </svg>
+            </i>
+            <span>star</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-stars"></use>
+              </svg>
+            </i>
+            <span>stars</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-sun"></use>
+              </svg>
+            </i>
+            <span>sun</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-moon"></use>
+              </svg>
+            </i>
+            <span>moon</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-cloud"></use>
+              </svg>
+            </i>
+            <span>cloud</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-phone"></use>
+              </svg>
+            </i>
+            <span>phone</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-phone-talk"></use>
+              </svg>
+            </i>
+            <span>phone-talk</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-mobile"></use>
+              </svg>
+            </i>
+            <span>mobile</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-mobile-2"></use>
+              </svg>
+            </i>
+            <span>mobile-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-tablet"></use>
+              </svg>
+            </i>
+            <span>tablet</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-laptop"></use>
+              </svg>
+            </i>
+            <span>laptop</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-monitor"></use>
+              </svg>
+            </i>
+            <span>monitor</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-battery"></use>
+              </svg>
+            </i>
+            <span>battery</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-signal"></use>
+              </svg>
+            </i>
+            <span>signal</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-settings"></use>
+              </svg>
+            </i>
+            <span>settings</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-settings-o"></use>
+              </svg>
+            </i>
+            <span>settings-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-process"></use>
+              </svg>
+            </i>
+            <span>process</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-process-o"></use>
+              </svg>
+            </i>
+            <span>process-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-science"></use>
+              </svg>
+            </i>
+            <span>science</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-bulb"></use>
+              </svg>
+            </i>
+            <span>bulb</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-lightbulb"></use>
+              </svg>
+            </i>
+            <span>lightbulb</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-stats"></use>
+              </svg>
+            </i>
+            <span>stats</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-stats-2"></use>
+              </svg>
+            </i>
+            <span>stats-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-stats-o"></use>
+              </svg>
+            </i>
+            <span>stats-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-stats-2-o"></use>
+              </svg>
+            </i>
+            <span>stats-2-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-print"></use>
+              </svg>
+            </i>
+            <span>print</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-images"></use>
+              </svg>
+            </i>
+            <span>images</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-grid"></use>
+              </svg>
+            </i>
+            <span>grid</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-grid-o"></use>
+              </svg>
+            </i>
+            <span>grid-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-masonry"></use>
+              </svg>
+            </i>
+            <span>masonry</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-cinema"></use>
+              </svg>
+            </i>
+            <span>cinema</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-play"></use>
+              </svg>
+            </i>
+            <span>play</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-camera"></use>
+              </svg>
+            </i>
+            <span>camera</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-video"></use>
+              </svg>
+            </i>
+            <span>video</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-microphone"></use>
+              </svg>
+            </i>
+            <span>microphone</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-clip"></use>
+              </svg>
+            </i>
+            <span>clip</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-envelope"></use>
+              </svg>
+            </i>
+            <span>envelope</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-rss"></use>
+              </svg>
+            </i>
+            <span>rss</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-rss-2"></use>
+              </svg>
+            </i>
+            <span>rss-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-menu"></use>
+              </svg>
+            </i>
+            <span>menu</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-list"></use>
+              </svg>
+            </i>
+            <span>list</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-menu-o"></use>
+              </svg>
+            </i>
+            <span>menu-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-chat"></use>
+              </svg>
+            </i>
+            <span>chat</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-chat-o"></use>
+              </svg>
+            </i>
+            <span>chat-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-garbage"></use>
+              </svg>
+            </i>
+            <span>garbage</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-folder"></use>
+              </svg>
+            </i>
+            <span>folder</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-cut-h"></use>
+              </svg>
+            </i>
+            <span>cut-h</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-cut-v"></use>
+              </svg>
+            </i>
+            <span>cut-v</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-copy"></use>
+              </svg>
+            </i>
+            <span>copy</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-paste"></use>
+              </svg>
+            </i>
+            <span>paste</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-document"></use>
+              </svg>
+            </i>
+            <span>document</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-openOffice"></use>
+              </svg>
+            </i>
+            <span>openOffice</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-pdf"></use>
+              </svg>
+            </i>
+            <span>pdf</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-css3"></use>
+              </svg>
+            </i>
+            <span>css3</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-css3-2"></use>
+              </svg>
+            </i>
+            <span>css3-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-html5"></use>
+              </svg>
+            </i>
+            <span>html5</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-html5-2"></use>
+              </svg>
+            </i>
+            <span>html5-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-node"></use>
+              </svg>
+            </i>
+            <span>node</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-javascript"></use>
+              </svg>
+            </i>
+            <span>javascript</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" focusable="false">
+                <use href="#icon-php"></use>
+              </svg>
+            </i>
+            <span>php</span>
+          </li>
+
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-coder"></use>
+              </svg>
+            </i>
+            <span>coder</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-git"></use>
+              </svg>
+            </i>
+            <span>git</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-codepen"></use>
+              </svg>
+            </i>
+            <span>codepen</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-stackOflow"></use>
+              </svg>
+            </i>
+            <span>stackOflow</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-behance"></use>
+              </svg>
+            </i>
+            <span>behance</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-blogger"></use>
+              </svg>
+            </i>
+            <span>blogger</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-deviantArt"></use>
+              </svg>
+            </i>
+            <span>deviantArt</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-dribble"></use>
+              </svg>
+            </i>
+            <span>dribble</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-facebook"></use>
+              </svg>
+            </i>
+            <span>facebook</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-flickr"></use>
+              </svg>
+            </i>
+            <span>flickr</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-github"></use>
+              </svg>
+            </i>
+            <span>github</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-inkscape"></use>
+              </svg>
+            </i>
+            <span>inkscape</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-instagram"></use>
+              </svg>
+            </i>
+            <span>instagram</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-linkedin"></use>
+              </svg>
+            </i>
+            <span>linkedin</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-npm"></use>
+              </svg>
+            </i>
+            <span>npm</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-pinterest"></use>
+              </svg>
+            </i>
+            <span>pinterest</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-twitch"></use>
+              </svg>
+            </i>
+            <span>twitch</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-wordpress"></use>
+              </svg>
+            </i>
+            <span>wordpress</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-x"></use>
+              </svg>
+            </i>
+            <span>X</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-debian"></use>
+              </svg>
+            </i>
+            <span>debian</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-windows"></use>
+              </svg>
+            </i>
+            <span>windows</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-apple"></use>
+              </svg>
+            </i>
+            <span>apple</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-android"></use>
+              </svg>
+            </i>
+            <span>android</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-drive"></use>
+              </svg>
+            </i>
+            <span>drive</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-dropbox"></use>
+              </svg>
+            </i>
+            <span>dropbox</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-chrome"></use>
+              </svg>
+            </i>
+            <span>chrome</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-edge"></use>
+              </svg>
+            </i>
+            <span>edge</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-firefox"></use>
+              </svg>
+            </i>
+            <span>firefox</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-opera"></use>
+              </svg>
+            </i>
+            <span>opera</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-safari"></use>
+              </svg>
+            </i>
+            <span>safari</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-brave"></use>
+              </svg>
+            </i>
+            <span>brave</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-behance-2"></use>
+              </svg>
+            </i>
+            <span>behance-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-blogger-2"></use>
+              </svg>
+            </i>
+            <span>blogger-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-blogger-3"></use>
+              </svg>
+            </i>
+            <span>blogger-3</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-codepen-2"></use>
+              </svg>
+            </i>
+            <span>codepen-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-deviantArt-2"></use>
+              </svg>
+            </i>
+            <span>deviantArt-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-facebook-2"></use>
+              </svg>
+            </i>
+            <span>facebook-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-flickr-2"></use>
+              </svg>
+            </i>
+            <span>flickr-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-instagram-2"></use>
+              </svg>
+            </i>
+            <span>instagram-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-linkedin-2"></use>
+              </svg>
+            </i>
+            <span>linkedin-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-paypal"></use>
+              </svg>
+            </i>
+            <span>paypal</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-pinterest-2"></use>
+              </svg>
+            </i>
+            <span>pinterest-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-whatsapp"></use>
+              </svg>
+            </i>
+            <span>whatsapp</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-wordpress-2"></use>
+              </svg>
+            </i>
+            <span>wordpress-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-x-2"></use>
+              </svg>
+            </i>
+            <span>X-2</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-youtube"></use>
+              </svg>
+            </i>
+            <span>youtube</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-like"></use>
+              </svg>
+            </i>
+            <span>like</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-heart"></use>
+              </svg>
+            </i>
+            <span>heart</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-heart-o"></use>
+              </svg>
+            </i>
+            <span>heart-o</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-nature"></use>
+              </svg>
+            </i>
+            <span>nature</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-transport"></use>
+              </svg>
+            </i>
+            <span>transport</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-monster"></use>
+              </svg>
+            </i>
+            <span>monster</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-shape"></use>
+              </svg>
+            </i>
+            <span>shape</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-treky"></use>
+              </svg>
+            </i>
+            <span>treky</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-cross"></use>
+              </svg>
+            </i>
+            <span>cross</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-more"></use>
+              </svg>
+            </i>
+            <span>more</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-manonegra"></use>
+              </svg>
+            </i>
+            <span>manonegra</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#icon-hispadesign"></use>
+              </svg>
+            </i>
+            <span>hispadesign</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-arrows"></use>
+              </svg>
+            </i>
+            <span>arrows</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-mixtim"></use>
+              </svg>
+            </i>
+            <span>mixtim</span>
+          </li>
+          <li class="icon">
+            <i>
+              <svg class="my-icon" aria-hidden="true" focusable="false">
+                <use href="#icon-mixtim-2"></use>
+              </svg>
+            </i>
+            <span>mixtim-2</span>
+          </li>
+        </ul>
+		<div class="license">
+          <h2>License</h2>
+		  <p>miXTim Icons is open source, and made available under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>. Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.</p><br>
+		</div>
+      </main>
+      <footer>
+        <p>Brought to you<a href="#top" title="Go to top">&#x1F49B;</a> by мiXTiм &copy;&thinsp;2024</p>
+      </footer>
+    </div>
+    <!-- .wrapper -->
+
+    <script src="assets/main.js"></script>
+  </body>
 </html>

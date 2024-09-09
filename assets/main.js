@@ -28,28 +28,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Emtt search box
   document.querySelector('.empty').addEventListener('click', function() {
-	  document.querySelector('.search').value = ''; // Vacía el valor del input
-	  this.style.display = 'none'; // Oculta el botón de vacío
+	  document.querySelector('.search').value = '';
+	  this.style.display = 'none';
 	  document.querySelectorAll('li').forEach(function(li) {
-      li.style.display = ''; // Muestra todos los elementos de la lista
+      li.style.display = '';
     });
   });
   // Search
   document.querySelector('.search').addEventListener('keyup', function() {
-    var val = this.value.toLowerCase(); // Obtiene y convierte el valor del input a minúsculas
+    var val = this.value.toLowerCase();
 
     if (val.length > 0) { 
-      document.querySelector('.empty').style.display = 'inline'; // Muestra el botón de vacío si hay texto
+      document.querySelector('.empty').style.display = 'inline';
 	  } else {
-      document.querySelector('.empty').style.display = 'none'; // Oculta el botón de vacío si no hay texto
+      document.querySelector('.empty').style.display = 'none';
 	  }
 
 	  document.querySelectorAll('li').forEach(function(li) {
-      var text = li.textContent.toLowerCase(); // Obtiene y convierte el texto del elemento de la lista a minúsculas
+      var text = li.textContent.toLowerCase();
       if (text.includes(val)) {
-        li.style.display = ''; // Muestra el elemento si coincide con la búsqueda
+        li.style.display = '';
       } else {
-        li.style.display = 'none'; // Oculta el elemento si no coincide con la búsqueda
+        li.style.display = 'none';
       }
 	  });
   });
@@ -63,10 +63,29 @@ window.addEventListener('scroll', function() {
 	progressBar.style.width = `${width}%`;
 });
 
+// Theme switch
+let darkmode = localStorage.getItem('darkmode')
+const themeSwitch = document.getElementById('theme-switch');
+const enableDarkmode = () => {
+    document.body.classList.add('darkmode')
+    localStorage.setItem('darkmode', 'active')
+}
+const disableDarkmode = () => {
+    document.body.classList.remove('darkmode')
+    localStorage.setItem('darkmode', null)
+}
+
+if(darkmode === "active") enableDarkmode()
+
+themeSwitch.addEventListener('click', () => {
+    darkmode = localStorage.getItem('darkmode')
+    darkmode !== "active" ? enableDarkmode() : disableDarkmode()
+});
+
 // Pop Over
 document.querySelectorAll('i').forEach(function(icon) {
   icon.addEventListener('click', function() {
-    // Verifica si el elemento padre contiene la clase 'icon'
+
     if (this.parentElement.classList.contains('icon')) {
 	    const svg = this.firstElementChild.outerHTML;
 	    const name = this.parentElement.lastElementChild.textContent;
@@ -83,7 +102,7 @@ document.querySelectorAll('i').forEach(function(icon) {
 	  parent.insertAdjacentHTML('beforeend', popover);
   })
 });
-
+// Close popover
 function hideMe() {
   const fade = [
     { opacity: "0" },
@@ -104,19 +123,19 @@ function hideMe() {
     li.classList.remove('active');
   });
 }
-// Close button
+
 document.addEventListener('click', function(event) {
   if (event.target.classList.contains('close')) {
     hideMe();
   }
 });
-// Out Click
+
 document.addEventListener('click', function(event) {
   if (!event.target.closest('.popover, li')) {
     hideMe();
   }
 });
-// Close your popover pressing ESC key
+
 window.addEventListener('keyup', event => {
   if (event.key === 'Escape'){
     hideMe();
