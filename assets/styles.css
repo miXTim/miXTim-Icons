@@ -159,6 +159,13 @@ header h2::after {
 	  font-size: clamp(1rem, 4vw - 1rem, 1.5rem);
   }
 }
+p.lead {
+  max-width: 65ch;
+  margin: 1em auto;
+  font-size: clamp(1.1rem, 4cqi, 1.25rem);
+  line-height: 32px;
+  font-weight: 400;
+}
 
 a {
 	color: hsl(var(--clr400));
@@ -167,7 +174,7 @@ a {
 	color: hsl(var(--clr200));
   }
 }
-header { padding-top: 3rem;}
+header { padding: 3rem 1rem 0;}
 header, footer {
   container-type: inline-size;
   text-align: center;
@@ -426,6 +433,6 @@ footer {
   #theme-switch { opacity: 0.3;}
 }
 .license {
-	width: min(66ch, 75%);
-	margin: 0 auto;
+	width: min(75ch, 80%);
+	margin: 0 auto 4rem;
 }
