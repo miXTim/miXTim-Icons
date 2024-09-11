@@ -81,7 +81,7 @@ body:not(.darkmode) .wrapper > * {
 	top: 0;
 	width: 100%;
 	height: 0.3125em;
-	background-color: #fff3;
+	background-color: hsla(var(--clr200) / 0.2);
 	z-index: 1;
 }
 /* Theme switch */
@@ -89,7 +89,7 @@ body:not(.darkmode) .wrapper > * {
   padding: 0;
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 18px;
   height: 50px;
   width: 50px;
   display: grid;
@@ -138,9 +138,8 @@ h1 u {
 }
 h1 + h2 {
   margin: 2rem 0;
-  color: hsl(var(--clr100));
   font-weight: 300;
-  font-size: clamp(1.1rem, 4cqi, 1.5rem);
+  font-size: clamp(1.25rem, 4cqi, 1.5625rem);
 }
 header h2::after {
     content: '';
@@ -154,9 +153,6 @@ header h2::after {
 @-moz-document url-prefix() {
   h1 {
 	  font-size: clamp(2.2rem, 10vw - 1rem, 4rem);
-  }
-  h1 + h2 {
-	  font-size: clamp(1rem, 4vw - 1rem, 1.5rem);
   }
 }
 p.lead {
@@ -174,7 +170,7 @@ a {
 	color: hsl(var(--clr200));
   }
 }
-header { padding: 3rem 1rem 0;}
+header { padding: 3rem 1.75rem 0;}
 header, footer {
   container-type: inline-size;
   text-align: center;
@@ -406,7 +402,10 @@ footer {
   cursor: pointer;
   transition: color 250ms ease-out;
 }
-.popover .close:hover { color: red;}
+.popover .close:hover {
+	color: red;
+	text-shadow: 1px 1px 0 #0008;
+}
 .popover h3 {
   color: #000;
   font-size: 22px;
