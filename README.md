@@ -12,6 +12,10 @@ Inkscape: Open Source Scalable Vector Graphics Editor. Inkscape is a Free and op
 
 Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
 
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. 
+
+GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version control of Git plus other features.
+
 ## License
 miXTim Icons is open source, and made available under the <a href="https://opensource.org/license/gpl-3-0">GNU GPL 3.0 License</a>. Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
 
