@@ -4,14 +4,19 @@
 
 Download free SVG icons for commercial use. Completely open source, GNU GPL licensed and built by Studio miXTim.
 
-All served icons are displayed as standalone icon, *decorative* and they are optimized with manual compression. 
+All served icons are displayed as standalone icon, *decorative* (icons that repeats the information conveyed by text or do not add significant value) and they are optimized with manual compression. 
+Follow this guidelines to show as standalone icon, *meaningful* (and other usage examples): https://css-tricks.com/accessible-svgs/
+
+## Tools
+Inkscape: Open Source Scalable Vector Graphics Editor. Inkscape is a Free and open source vector graphics editor for GNU/Linux, Windows and macOS. Inkscape uses the standardized SVG file format as its main format, which is supported by many other applications including web browsers.
+
+Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
 
 ## License
-
 miXTim Icons is open source, and made available under the <a href="https://opensource.org/license/gpl-3-0">GNU GPL 3.0 License</a>. Distribute, use as-is, or modify to your liking in personal and commercial projects. Please retain the original readme and license files.
 
-## Open Source
-### GNU General Public License
+### Open Source
+#### GNU General Public License
 You are free:
 - **to share** - to copy, distribute and transmit the work
 - **to remix** - to adapt the work
