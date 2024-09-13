@@ -154,6 +154,9 @@ header h2::after {
   h1 {
 	  font-size: clamp(2.2rem, 10vw - 1rem, 4rem);
   }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  }
 }
 p.lead {
   max-width: 65ch;
@@ -308,7 +311,7 @@ footer {
 	border-color: hsla(var(--clr400) / 0.5);
 	backdrop-filter: blur(3px);
 }
-.grid .icon:hover .my-icon {
+.grid .icon:hover .my-icon:not(.popGrid .ico svg.my-icon) {
   stroke: hsl(var(--clr600));
   stroke-width: 4;
   stroke-linecap: round;
@@ -344,18 +347,12 @@ footer {
   gap: 2vmin 0;
   border-radius: 0.5rem;
 }
-.popover:hover .popGrid .ico svg.my-icon {
-  stroke: none;
-  stroke-width: 0;
-  transform: none;
-  filter: none;
-  cursor: initial;
-}
 .popGrid .ico svg.my-icon {
   display: inline-block;
   fill: currentColor;
   transform: scale(1);
   filter: none;
+  cursor: initial;
 }
 .popGrid .ico.x128 svg.my-icon {
   width: 128px;
@@ -375,7 +372,7 @@ footer {
   top: -50%;
   left: 50%;
   translate: -52% -50%;
-  width: 170px;
+  width: 10em;
   padding: 0 1em 1em;
   background: linear-gradient(hsl(var(--clr400)), #fff 27%);
   color: #555;
@@ -416,7 +413,7 @@ footer {
   text-align: center;
 }
 @media screen and (width > 500px) {
-	::-webkit-scrollbar {width: 10px;}
+	::-webkit-scrollbar {width: 8px;}
 	::-webkit-scrollbar-track {
 		background: linear-gradient(var(--clr700),var(--clr800));
 		box-shadow: 0 0 8px #000 inset;}

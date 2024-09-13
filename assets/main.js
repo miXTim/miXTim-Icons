@@ -82,6 +82,17 @@ themeSwitch.addEventListener('click', () => {
     darkmode !== "active" ? enableDarkmode() : disableDarkmode()
 });
 
+function escapeHtml(str){
+	var map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+    ';': '&semi;'
+  };
+  return String(str).replace(/[&<>"';]/g, function(m) { return map[m]; }); 
+}
 // Pop Over
 document.querySelectorAll('i').forEach(function(icon) {
   icon.addEventListener('click', function() {
@@ -90,7 +101,9 @@ document.querySelectorAll('i').forEach(function(icon) {
 	    const svg = this.firstElementChild.outerHTML;
 	    const name = this.parentElement.lastElementChild.textContent;
 
-      var popover = `<div class="popover First"><span class="close">&times;</span><h3> ${name} </h3><div class="popGrid" title="usage examples"><div class="ico x128" title="128px"> ${svg} </div><div class="ico x48" title="48px"> ${svg} </div><div class="ico" title="32px"> ${svg} </div><div class="ico x16" title="16px"> ${svg} </div></div><p><u>Quitar bordes</u></p></div>`;
+      var popover = document.createElement('div');
+	    popover.className = "popover First";
+	    popover.innerHTML = '<span class=\"close\">&times;</span><h3>' + name + '</h3><div class=\"popGrid\" title=\"usage examples\"><div class=\"ico x128\" title=\"128px\">' + svg + '</div><div class=\"ico x48\" title=\"48px\">' + svg + '</div><div class=\"ico\" title=\"32px\">' + svg + '</div><div class=\"ico x16\" title=\"16px\">' + svg + '</div></div><p><u>Quitar bordes</u></p>';
     };
 
     document.querySelectorAll('li').forEach(function(li) {
@@ -99,7 +112,7 @@ document.querySelectorAll('i').forEach(function(icon) {
 
     let parent = this.parentElement;
     parent.classList.add('active');
-	  parent.insertAdjacentHTML('beforeend', popover);
+    parent.appendChild(popover);
   })
 });
 // Close popover
