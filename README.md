@@ -8,7 +8,7 @@ All served icons are displayed as standalone icon, *decorative* (icons that repe
 Follow this guidelines to show as standalone icon, *meaningful* (and other usage examples): https://css-tricks.com/accessible-svgs/
 
 ## Tools
-Inkscape: Open Source Scalable Vector Graphics Editor. Inkscape is a Free and open source vector graphics editor for GNU/Linux, Windows and macOS. Inkscape uses the standardized SVG file format as its main format, which is supported by many other applications including web browsers.
+Inkscape is a Free and open source vector graphics editor for GNU/Linux, Windows and macOS. Inkscape uses the standardized SVG file format as its main format, which is supported by many other applications including web browsers.
 
 Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.
 
