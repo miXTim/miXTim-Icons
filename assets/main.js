@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	  });
   });
 });
-
+		
 // Progress Bar
 const progressBar = document.querySelector('#progress');
 
@@ -154,3 +154,14 @@ window.addEventListener('keyup', event => {
     hideMe();
   }
 });
+
+arrowTop.onclick = function() {
+  window.scrollTo(window.scrollX, 0);
+  // después de scrollTo, habrá un evento "scroll", entonces la flecha se ocultará automáticamente
+};
+
+window.addEventListener('scroll', function() {
+  arrowTop.hidden = (window.scrollY < document.documentElement.clientHeight);
+});
+
+	
