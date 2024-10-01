@@ -1,11 +1,11 @@
 # miXTim-Icons
 
-**215 Free Custom SVG Icons** (Recopilación de iconos SVG originales)
+**225 Free Custom SVG Icons** (Recopilación de iconos SVG originales)
 
 Download free SVG icons for commercial use. Completely open source, GNU GPL licensed and built by Studio miXTim.
 
 All served icons are displayed as standalone icon, *decorative* (icons that repeats the information conveyed by text or do not add significant value) and they are optimized with manual compression. 
-Follow this guidelines to show as standalone icon, *meaningful* (and other usage examples): https://css-tricks.com/accessible-svgs/
+Follow the guidelines in this post to show as standalone icon, *meaningful* (and other usage examples): https://css-tricks.com/accessible-svgs/
 
 ## Tools
 Inkscape is a Free and open source vector graphics editor for GNU/Linux, Windows and macOS. Inkscape uses the standardized SVG file format as its main format, which is supported by many other applications including web browsers.
@@ -30,3 +30,6 @@ Under the following terms:
 - **copyright notice** - a copy of the license or copyright notice must be included with software
 - **documentation** - If you remix, transform, or build upon the material, changes must be documented
 - **share alike** - If you remix, transform, or build upon the material, you can't distribute your work with a closed source license
+
+## Try a demo
+[miXTim Icons](https://mixtim.github.io/mixtim-icons/) 🔗
