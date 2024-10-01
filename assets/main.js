@@ -163,5 +163,3 @@ arrowTop.onclick = function() {
 window.addEventListener('scroll', function() {
   arrowTop.hidden = (window.scrollY < document.documentElement.clientHeight);
 });
-
-	
