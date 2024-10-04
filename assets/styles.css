@@ -126,9 +126,10 @@ a {
   color: hsl(var(--clr300));
   text-decoration: none;
   &:hover {
-	color: hsl(var(--clr200));
+	  color: hsl(var(--clr200));
   }
 }
+a span { font-size: 0;}
 header { padding: 4.5rem 1.75rem 1.5rem;}
 header, footer {
   container-type: inline-size;
@@ -238,20 +239,20 @@ footer {
 }
 /* ------------------------ */
 .search-box {
-  width: min(500px,70%);
+  width: min(500px,60%);
   position: sticky;
   top: 1.25rem;
   margin: 0 auto;
   z-index: 2;
 }
 .search {
-  height: 5dvh;
+  height: 50px;
   width: 100%;
   padding: 5px 15px;
-  background-color: hsla(var(--clr500) / 0.8);
+  background-color: hsla(var(--clr500) / 0.9);
   border: 2px solid hsla(var(--clr400) / 0.5);
   color: inherit;
-  font-size: clamp(0.9375rem, 4vw - 1rem, 1.1rem);
+  font-size: clamp(1rem, 4vw - 1rem, 1.125rem);
 	letter-spacing: 0.02em;
   border-radius: 50px;
   box-shadow: 0 0 22px -15px;
@@ -261,7 +262,7 @@ footer {
   }
   &:focus {
     outline: none;
-    background-color: hsla(var(--clr600) / 0.6);
+    background-color: hsla(var(--clr600) / 0.9);
     box-shadow: 0 0 0 2px #fff;
   }
 }
@@ -453,14 +454,22 @@ footer {
 }
 
 #arrowTop {
-  height: 9px;
-  width: 14px;
   color: hsl(var(--clr400));
   position: fixed;
   top: 12px;
   left: 12px;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 #arrowTop::before {
   content: '▲';
 }
+
+.github {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+	z-index: 1;
+	&:hover .github-shape { fill: hsl(var(--clr300));}
+}
+.github-shape { fill: hsl(var(--clr200));}
