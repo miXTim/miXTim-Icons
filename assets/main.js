@@ -58,9 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
 // Progress Bar
 const progressBar = document.querySelector('#progress');
 
+arrowTop.onclick = function() {
+  window.scrollTo(window.scrollX, 0);
+  // después de scrollTo, habrá un evento "scroll", entonces la flecha se ocultará automáticamente
+};
+
 window.addEventListener('scroll', function() {
 	let width = (document.body.scrollTop || document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100;
 	progressBar.style.width = `${width}%`;
+	// Scroll Top
+	arrowTop.hidden = (window.scrollY < document.documentElement.clientHeight);
 });
 
 // Theme switch
@@ -84,14 +91,9 @@ themeSwitch.addEventListener('click', () => {
 
 function escapeHtml(str){
 	var map = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#39;',
-    ';': '&semi;'
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;', ';': '&semi;'
   };
-  return String(str).replace(/[&<>"';]/g, function(m) { return map[m]; }); 
+  return String(str).replace(/[&<>"';]/g, function(m) { return map[m]; })
 }
 // Pop Over
 document.querySelectorAll('i').forEach(function(icon) {
@@ -99,11 +101,11 @@ document.querySelectorAll('i').forEach(function(icon) {
 
     if (this.parentElement.classList.contains('icon')) {
 	    const svg = this.firstElementChild.outerHTML;
-	    const name = this.parentElement.lastElementChild.textContent;
+	    const name = escapeHtml(this.parentElement.lastElementChild.textContent);
 
       var popover = document.createElement('div');
 	    popover.className = "popover First";
-	    popover.innerHTML = '<span class=\"close\">&times;</span><h3>' + name + '</h3><div class=\"popGrid\" title=\"usage examples\"><div class=\"ico x128\" title=\"128px\">' + svg + '</div><div class=\"ico x48\" title=\"48px\">' + svg + '</div><div class=\"ico\" title=\"32px\">' + svg + '</div><div class=\"ico x16\" title=\"16px\">' + svg + '</div></div><p><u>Quitar bordes</u></p>';
+	    popover.innerHTML = `<span class="close">&times;</span><h3> ${name} </h3><div class="popGrid" title="usage examples"><div class="ico x128" title="128px"> ${svg} </div><div class="ico x48" title="48px"> ${svg} </div><div class="ico" title="32px"> ${svg} </div><div class="ico x16" title="16px"> ${svg} </div></div><p><u>Quitar bordes</u></p>`;
     };
 
     document.querySelectorAll('li').forEach(function(li) {
@@ -153,13 +155,4 @@ window.addEventListener('keyup', event => {
   if (event.key === 'Escape'){
     hideMe();
   }
-});
-
-arrowTop.onclick = function() {
-  window.scrollTo(window.scrollX, 0);
-  // después de scrollTo, habrá un evento "scroll", entonces la flecha se ocultará automáticamente
-};
-
-window.addEventListener('scroll', function() {
-  arrowTop.hidden = (window.scrollY < document.documentElement.clientHeight);
 });

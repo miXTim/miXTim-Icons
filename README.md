@@ -32,4 +32,4 @@ Under the following terms:
 - **share alike** - If you remix, transform, or build upon the material, you can't distribute your work with a closed source license
 
 ## Try a demo
-[miXTim Icons](https://mixtim.github.io/mixtim-icons/) 🔗
+[miXTim Icons](https://mixtim.github.io/miXTim-icons/) 🔗

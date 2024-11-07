@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 miXTim Icons Free 1.0.1 by @mixtim
-License - https://github.com/license/free (Icons: CC BY 4.0, Code: GNU GPL License)
+License - https://github.com/license/free (Icons: CC BY 4.0, Code: GNU GPL 3.0)
 */
 :root {
   --clr100: 210 24% 8%;
@@ -13,6 +13,10 @@ License - https://github.com/license/free (Icons: CC BY 4.0, Code: GNU GPL Licen
   --clr700: #eef2f6;
   --clr800: #8eb3d7;
   --clr900: #a0b3c6;
+  --font-s0: clamp(.8rem,2vw,0.9rem);
+  --font-s1: clamp(1.1rem, 4cqi, 1.25rem);
+  --font-s2: clamp(1.25rem, 4cqi, 1.5625rem);
+  --font-s3: clamp(2.75rem, 10vw - 1rem, 4rem);
 }
 .darkmode {
   --clr100: 210 31% 95%;
@@ -29,6 +33,7 @@ License - https://github.com/license/free (Icons: CC BY 4.0, Code: GNU GPL Licen
 
 html {
   box-sizing: border-box;
+  height: 100%;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   scroll-behavior: smooth;
@@ -39,10 +44,10 @@ html {
   html { scroll-behavior: auto;}
   .First, .Second { animation-duration: 10ms;}
 }
-html, body { height: 100%;}
 
 body {
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",  sans-serif;
   background-color: hsl(var(--clr500));
   transition: background 300ms;
@@ -72,17 +77,16 @@ body:not(.darkmode) .wrapper > * {
   filter: invert(1);
 }
 /* ------------------------- */
+header {
+  container-type: inline-size;
+  padding: 4.5rem 1.75rem 1.5rem;
+  text-align: center;
+}
 h1 {
   margin: 0;
-  color: hsl(var(--clr200));
-  font-size: clamp(2.5rem, 10vw - 1rem, 4rem);
+  font-size: var(--font-s3);
   font-weight: 200;
   line-height: 0.85;
-  background: -webkit-gradient(linear, right bottom, left top, from(hsl(var(--clr200))), to(hsl(var(--clr100))));
-  background: linear-gradient(hsl(var(--clr100)) 25%, hsl(var(--clr200)));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 h1 span { font-weight: 900;}
 h1 u {
@@ -93,7 +97,7 @@ h1 u {
 h1 + h2 {
   margin: 3rem 0;
   font-weight: 300;
-  font-size: clamp(1.25rem, 4cqi, 1.5625rem);
+  font-size: var(--font-s2);
 }
 header h2::after {
   content: '';
@@ -104,6 +108,14 @@ header h2::after {
   height: 5px;
   background: linear-gradient(90deg, #0000, hsla(var(--clr400) / 0.25), #0000);
 }
+p.lead {
+  max-width: 65ch;
+  margin: 1em auto;
+  font-size: var(--font-s1);
+  line-height: 32px;
+  font-weight: 400;
+  text-align: center;
+}
 @-moz-document url-prefix() {
   h1 {
 	font-size: clamp(2.2rem, 10vw - 1rem, 4rem);
@@ -112,34 +124,33 @@ header h2::after {
     font-size: clamp(1rem, 10vw - 1rem, 1.1875rem);
   }
 }
-p.lead {
-  max-width: 65ch;
-  margin: 1em auto;
-  font-size: clamp(1.1rem, 4cqi, 1.25rem);
-  line-height: 32px;
-  font-weight: 400;
-}
 /* sólo en master, quitar en github.io */
 header p:last-child { color: hsl(var(--clr200));}
 
 a {
   color: hsl(var(--clr300));
   text-decoration: none;
+  transition: color 200ms;
   &:hover {
 	  color: hsl(var(--clr200));
   }
 }
 a span { font-size: 0;}
-header { padding: 4.5rem 1.75rem 1.5rem;}
-header, footer {
-  container-type: inline-size;
-  text-align: center;
-}
 footer {
   margin: 0 auto;
   padding: 1rem;
   background-image: radial-gradient(circle at left center, var(--clr800) -200%, hsla(var(--clr600) / 0.4) 200%);
-  font-size: small;
+  font-size: var(--font-s0);
+  text-align: center;
+}
+.engraved {
+    color: hsl(var(--clr100));
+    background: -webkit-gradient(linear, right top, left top, from(hsl(var(--clr300))), to(hsl(var(--clr100))));
+    background: linear-gradient(-5deg, hsl(var(--clr300)), hsl(var(--clr200)), hsl(var(--clr100)));
+    -webkit-background-clip: text;
+  background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 2px hsla(var(--clr600) / 0.5);
 }
 /* ------------------------ */
 @-webkit-keyframes fade {
@@ -197,13 +208,33 @@ footer {
   z-index: 1;
 }
 .version {
+  width: min-content;
+  margin: 2.5em auto 3em;
   padding: 0.25rem 0.5rem;
   background-color: hsl(var(--clr400));
   color: var(--clr800);
   font-weight: bold;
-  font-size: 14px;
+  font-size: var(--font-s0);
   border-radius: 2px;
 }
+details {
+  max-width: 60ch;
+	margin: 1.5em auto;
+  background-color: var(--clr900);
+  border-radius: 5px;
+}
+summary {
+  padding: 10px;
+  cursor: pointer;
+  transition: color 200ms;
+  &:hover {
+    color: hsl(var(--clr300));
+  }
+}
+summary::marker { color: hsl(var(--clr400));}
+details section { padding: 6px 12px 14px;}
+details[open] section { color: hsl(var(--clr200));}
+details:active { transform: scale(0.98);}
 /* Theme switch */
 #theme-switch {
   padding: 0;
@@ -246,13 +277,13 @@ footer {
   z-index: 2;
 }
 .search {
-  height: 50px;
+  height: 48px;
   width: 100%;
   padding: 5px 15px;
   background-color: hsla(var(--clr500) / 0.9);
   border: 2px solid hsla(var(--clr400) / 0.5);
   color: inherit;
-  font-size: clamp(1rem, 4vw - 1rem, 1.125rem);
+  font-size: var(--font-s1);
 	letter-spacing: 0.02em;
   border-radius: 50px;
   box-shadow: 0 0 22px -15px;
@@ -319,6 +350,7 @@ footer {
   justify-items: center;
   gap: 0.33rem;
   aspect-ratio: 1;
+  content-visibility: auto;
   background: none;
   border: 4px solid #0000;
   border-radius: 0.5rem;
@@ -429,8 +461,65 @@ footer {
   text-align: left;
 }
 .popover p {
-  font-size: small;
+  font-size: var(--font-s0);
   text-align: center;
+}
+.license {
+  width: min(75ch, 80%);
+  margin: 2rem auto 4rem;
+}
+
+#arrowTop {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  color: hsl(var(--clr400));
+  font-size: 1.5rem;
+  cursor: pointer;
+  &::before {
+    content: '▲';
+  }
+}
+
+.github-link {
+  position: sticky;
+  left: 0;
+  top: 1em;
+  overflow: hidden;
+	z-index: 1;
+}
+.stick {
+  padding-left: 0.25em;
+  position: relative;
+	left: -145px;
+	width: min-content;
+  display: grid;
+  grid-template-columns: minmax(145px, 75%) 1fr;
+  align-items: center;
+  background-color: hsl(var(--clr600));
+  font-size: var(--font-s2);
+  text-align: center;
+  border-radius: 0 23px 23px 0;
+  transition: left 400ms ease-in-out;
+  user-select: none
+}
+.stick:hover { left: 0;}
+.bubble {
+	width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+	border-radius: 50%;
+  background-color: hsl(var(--clr200));
+  pointer-events: none;
+  border: 2px solid var(--clr700);
+  box-shadow:
+  0.2em 0 0.1em hsla(var(--clr400) / 0.6) inset,
+  0.25em 0.25em 0.1em #fff inset,
+  0.6em 0.6em 0.4em 0.5em hsla(var(--clr500) / 0.4) inset;
+}
+.stick:hover .bubble {
+  background: radial-gradient(#fff, hsl(var(--clr300)));
 }
 @media screen and (width > 500px) {
   ::-webkit-scrollbar {width: 8px;}
@@ -447,29 +536,5 @@ footer {
   }
   .popover p { display: none;}
   #theme-switch { opacity: 0.25;}
+  .stick { text-align: left;}
 }
-.license {
-  width: min(75ch, 80%);
-  margin: 0 auto 4rem;
-}
-
-#arrowTop {
-  color: hsl(var(--clr400));
-  position: fixed;
-  top: 12px;
-  left: 12px;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-#arrowTop::before {
-  content: '▲';
-}
-
-.github {
-    position: absolute;
-    width: 4em;
-    height: 4em;
-	z-index: 1;
-	&:hover .github-shape { fill: hsl(var(--clr300));}
-}
-.github-shape { fill: hsl(var(--clr200));}
