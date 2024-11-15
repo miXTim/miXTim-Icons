@@ -1,15 +1,15 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "miXTim icons",
+  "short_name": "miXTim",
   "icons": [
     {
-      "src": "/assets/web-app-manifest-192x192.png",
+      "src": "/assets/pwa-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "/assets/web-app-manifest-512x512.png",
+      "src": "/assets/pwa-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

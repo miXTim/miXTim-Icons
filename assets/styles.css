@@ -245,7 +245,7 @@ details:active { transform: scale(0.98);}
   width: 42px;
   display: grid;
   place-items: center;
-  background-color: hsl(var(--clr200));
+  background-color: hsla(var(--clr200) / 0.75);
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -274,7 +274,7 @@ details:active { transform: scale(0.98);}
   position: sticky;
   top: 1.25rem;
   margin: 0 auto;
-  z-index: 2;
+  z-index: 1;
 }
 .search {
   height: 48px;
@@ -333,6 +333,7 @@ details:active { transform: scale(0.98);}
   justify-items: center;
   gap: 3rem 3vmin;
   background-color: hsla(var(--clr600) / 0.25);
+  list-style-type: none;
   border-radius: 1rem;
 }
 @-moz-document url-prefix() {
@@ -350,7 +351,6 @@ details:active { transform: scale(0.98);}
   justify-items: center;
   gap: 0.33rem;
   aspect-ratio: 1;
-  content-visibility: auto;
   background: none;
   border: 4px solid #0000;
   border-radius: 0.5rem;
@@ -394,10 +394,9 @@ details:active { transform: scale(0.98);}
 .popGrid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  gap: 2vmin 0;
-  border-radius: 0.5rem;
+  gap: 1vmin 0;
 }
 .popGrid .ico svg.my-icon {
   display: inline-block;
@@ -421,11 +420,10 @@ details:active { transform: scale(0.98);}
 /* ------------------------ */
 .popover {
   position: absolute;
-  top: -50%;
+  top: -55%;
   left: 50%;
-  translate: -52% -50%;
-  width: 10em;
-  padding: 0 1em 1em;
+  translate: -52% -55%;
+  padding: 0 0.75em 1em;
   background: linear-gradient(hsl(var(--clr400)), #fff 27%);
   color: #555;
   border: 1px solid hsl(var(--clr500));
@@ -460,10 +458,7 @@ details:active { transform: scale(0.98);}
   font-size: 22px;
   text-align: left;
 }
-.popover p {
-  font-size: var(--font-s0);
-  text-align: center;
-}
+/* ------------------------ */
 .license {
   width: min(75ch, 80%);
   margin: 2rem auto 4rem;
@@ -521,20 +516,40 @@ details:active { transform: scale(0.98);}
 .stick:hover .bubble {
   background: radial-gradient(#fff, hsl(var(--clr300)));
 }
+/* ------------------------ */
+svg.my-icon .xl { width: 250px; height: 250px;}
+.flip-h { transform: scaleX(-1);}
+.flip-v { transform: scaleY(-1);}
+.rot-45 { transform: rotate(45deg);}
+.rot-90 { transform: rotate(90deg);}
+.spin {
+  transform-origin: center;
+  animation: spin 2s infinite linear;
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
 @media screen and (width > 500px) {
   ::-webkit-scrollbar {width: 8px;}
   ::-webkit-scrollbar-track {
-	background: linear-gradient(var(--clr700),var(--clr800));
-	box-shadow: 0 0 8px #000 inset;}
+    background: linear-gradient(var(--clr700),var(--clr800));
+    box-shadow: 0 0 8px #000 inset;}
   ::-webkit-scrollbar-thumb {
-	background: hsla(var(--clr400) / 0.5);
-	border-radius: 2px;
-	border: 1px solid hsla(var(--clr700) / 0.5);
-	box-shadow: 0 0 4px #000 inset;}
+    background: hsla(var(--clr400) / 0.5);
+    border-radius: 2px;
+    border: 1px solid hsla(var(--clr700) / 0.5);
+    box-shadow: 0 0 4px #000 inset;}
   ::-webkit-scrollbar-thumb:hover {
-	background: hsl(var(--clr400));
+	  background: hsl(var(--clr400));
   }
   .popover p { display: none;}
-  #theme-switch { opacity: 0.25;}
+  #theme-switch { opacity: 0.3;}
   .stick { text-align: left;}
 }
