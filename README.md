@@ -1,6 +1,6 @@
 # miXTim-Icons
 
-**181 Free Custom SVG Icons** (Recopilación de iconos SVG originales)
+**187 Free Custom SVG Icons** | (Recopilación de iconos SVG originales)
 
 Download free monochrome SVG icons for commercial use. Completely open source, GNU GPL licensed and built by Studio miXTim.
 
