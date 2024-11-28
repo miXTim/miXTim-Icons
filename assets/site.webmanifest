@@ -1,6 +1,6 @@
 {
-  "name": "miXTim icons",
-  "short_name": "miXTim",
+  "name": "мiXTiм Icons ㋡",
+  "short_name": "miXTim Icons",
   "icons": [
     {
       "src": "/assets/pwa-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#cca1aa",
-  "background_color": "#cca1aa",
+  "theme_color": "#0000",
+  "background_color": "#001933",
   "display": "standalone"
 }

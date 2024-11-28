@@ -1,4 +1,4 @@
-<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg aria-hidden="true" style="position:absolute; width:0; height:0; overflow:hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs">
 <!--
 miXTim Icons Free 1.0.0 by @mixtim - https://fontawesome.com
 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: GNU GPL 3.0)
@@ -119,6 +119,10 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
 <symbol id="i-gotop-2" viewBox="-2 -2 36 36">
 <desc>gotop-2</desc>
 <path d="m14.61 .56-14 13.5c-.8 .77-.82 2.03-.05 2.83 .77 .8 2.03 .82 2.83 .05l12.61-12.16 12.61 12.16c0.8 .77 2.06 .75 2.83-.05s0.75-2.06-.05-2.83l-14-13.5c-.77-.75-2-.75-2.78 0zm-.66 13.39-13.1 13.1c-1.13 1.13-1.13 2.96 0 4.1 1.13 1.13 2.96 1.13 4.1 0l11.1-11.1 11.1 11.1c1.13 1.13 2.96 1.13 4.1 0 1.13-1.13 1.13-2.96 0-4.1l-13.1-13.1c-1.13-1.13-2.96-1.13-4.1 0z"/>
+</symbol>
+<symbol id="i-scrolldown" viewBox="-2 -2 36 36">
+<desc>scrolldown</desc>
+<path d="m16 23.734-15.4-15.469h2.8l12.6 12.635 12.6-12.635h2.8zm0 8.2656-15.4-15.469h2.8l12.6 12.635 12.6-12.635h2.8zm0-16.531-15.4-15.469h2.8l12.6 12.635 12.6-12.635h2.8z"/>
 </symbol>
 <symbol id="i-arrow-o" viewBox="-2 -2 36 36">
 <desc>arrow-o</desc>
