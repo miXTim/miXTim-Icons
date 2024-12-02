@@ -47,7 +47,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",  sans-serif;
   background-color: hsl(var(--clr500));
   -webkit-transition: background 300ms;
   transition: background 300ms;
@@ -356,6 +356,7 @@ details:active { transform: scale(0.98);}
   border-radius: 0.5rem;
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out;
+  cursor: pointer;
   &:hover {
     box-shadow: -0.5rem -0.5rem 1rem hsl(var(--clr600)),
         0.5rem 0.5rem 1rem hsla(var(--clr400) / 0.2) inset,
@@ -386,7 +387,6 @@ details:active { transform: scale(0.98);}
   transform-origin: top;
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out;
-  cursor: pointer;
 }
 .icon.active { z-index: 1;}
 .icon.active svg {

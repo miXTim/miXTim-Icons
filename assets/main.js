@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('.search').addEventListener('keyup', function() {
     var val = this.value.toLowerCase();
 
-    if (val.length > 0) { 
+    if (val.length > 0) {
       document.querySelector('.empty').style.display = 'inline';
 	  } else {
       document.querySelector('.empty').style.display = 'none';
@@ -96,25 +96,19 @@ function escapeHtml(str){
   return String(str).replace(/[&<>"';]/g, function(m) { return map[m]; })
 }
 // Pop Over
-document.querySelectorAll('i').forEach(function(icon) {
+document.querySelectorAll('li').forEach(function(icon) {
   icon.addEventListener('click', function() {
 
-    if (this.parentElement.classList.contains('icon')) {
+    if (this.classList.contains('icon')) {
 	    const svg = this.firstElementChild.outerHTML;
-	    const name = escapeHtml(this.parentElement.lastElementChild.textContent);
+	    const name = escapeHtml(this.lastElementChild.textContent);
 
-      var popover = document.createElement('div');
+      var popover = document.createElement("div");
 	    popover.className = "popover First";
 	    popover.innerHTML = `<span class="close">&times;</span><h3> ${name} </h3><div class="popGrid" title="usage examples"><div class="ico x128" title="128px"> ${svg} </div><div class="ico x48" title="48px"> ${svg} </div><div class="ico" title="32px"> ${svg} </div><div class="ico x16" title="16px"> ${svg} </div></div>`;
     };
-
-    document.querySelectorAll('li').forEach(function(li) {
-      li.classList.remove('active');
-    });
-
-    let parent = this.parentElement;
-    parent.classList.add('active');
-    parent.appendChild(popover);
+    icon.classList.add('active');
+    icon.appendChild(popover);
   })
 });
 // Close popover
