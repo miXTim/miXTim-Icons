@@ -13,9 +13,9 @@ License - https://github.com/license/free (Icons: CC BY 4.0, Code: GNU GPL 3.0)
   --clr700: #8eb3d7;
   --clr800: #a0b3c6;
   --font-s0: clamp(.8rem,2vw,0.9rem);
-  --font-s1: clamp(1.1rem, 4cqi, 1.25rem);
+  --font-s3: clamp(1.1rem, 4cqi, 1.25rem);
   --font-s2: clamp(1.5rem, 4cqi, 2rem);
-  --font-s3: clamp(2.75rem, 10vw - 1rem, 4.5rem);
+  --font-s1: clamp(2.5625rem, 10vw - 1rem, 4.5rem);
 
 }
 .darkmode {
@@ -79,12 +79,12 @@ body:not(.darkmode) .wrapper > * {
 /* ------------------------- */
 header {
   container-type: inline-size;
-  padding: 3rem 1.75rem 1.5rem;
+  padding: 2.5rem 1.75rem 1.5rem;
   text-align: center;
 }
 h1 {
   margin: 0;
-  font-size: var(--font-s3);
+  font-size: var(--font-s1);
   font-weight: 200;
   line-height: 0.85;
 }
@@ -108,20 +108,23 @@ header h2::after {
   height: 5px;
   background: linear-gradient(90deg, #0000, hsla(var(--clr400) / 0.3), #0000);
 }
-p.lead {
+p.desc {
   max-width: 65ch;
   margin: 1em auto;
-  font-size: var(--font-s1);
+  font-size: var(--font-s3);
   line-height: 32px;
   font-weight: 400;
   text-align: center;
 }
 @-moz-document url-prefix() {
   h1 {
-	font-size: clamp(2.2rem, 10vw - 1rem, 4rem);
+	  font-size: clamp(2.2rem, 10vw - 1rem, 4rem);
   }
-  h2 + p {
-    font-size: clamp(1rem, 10vw - 1rem, 1.1875rem);
+  p.desc {
+    font-size: clamp(0.9375rem, 10vw - 1rem, 1.1875rem);
+  }
+  .grid .icon > span {
+    font-size: clamp(0.875rem, 4vw - 1rem, 1rem);
   }
 }
 /* sólo en master, quitar en github.io */
@@ -244,8 +247,8 @@ details:active { transform: scale(0.98);}
   position: fixed;
   top: 18px;
   right: 12px;
-  height: 42px;
-  width: 42px;
+  height: 41px;
+  width: 41px;
   display: grid;
   place-items: center;
   background-color: hsla(var(--clr200) / 0.75);
@@ -274,7 +277,7 @@ details:active { transform: scale(0.98);}
 }
 /* ------------------------ */
 .search-box {
-  width: min(500px,60%);
+  width: min(25em,64%);
   position: sticky;
   top: 1.25rem;
   margin: 0 auto;
@@ -287,7 +290,7 @@ details:active { transform: scale(0.98);}
   background-color: hsla(var(--clr500) / 0.9);
   border: 2px solid hsla(var(--clr400) / 0.5);
   color: inherit;
-  font-size: var(--font-s1);
+  font-size: var(--font-s3);
 	letter-spacing: 0.02em;
   border-radius: 50px;
   box-shadow: 0 0 22px -15px;
@@ -495,7 +498,7 @@ details:active { transform: scale(0.98);}
   align-items: center;
   justify-items: center;
   background-color: hsl(var(--clr600));
-  font-size: var(--font-s1);
+  font-size: var(--font-s3);
   border-radius: 0 24px 24px 0;
   -webkit-transition: left 400ms ease-in-out;
   transition: left 400ms ease-in-out;
