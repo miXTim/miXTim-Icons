@@ -9,6 +9,9 @@ Follow the guidelines in this post to show as standalone icon, *meaningful* (wit
 
 ![presentacion](https://github.com/user-attachments/assets/f223cf97-8f9a-4a47-b153-a33c57ddb660)
 
+## Features
+Fully featured search onpage filter with outstanding performance and support for light/dark themes. Click on icon buttons to open a popover with four different sizes.
+
 ## Tools
 **Inkscape** is a Free and open source vector graphics editor for GNU/Linux, Windows and macOS. Inkscape uses the standardized SVG file format as its main format, which is supported by many other applications including web browsers.
 
