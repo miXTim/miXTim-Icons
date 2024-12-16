@@ -10,7 +10,9 @@ Follow the guidelines in this post to show as standalone icon, *meaningful* (wit
 ![presentacion](https://github.com/user-attachments/assets/f223cf97-8f9a-4a47-b153-a33c57ddb660)
 
 ## Features
-Fully featured search onpage filter with outstanding performance and support for light/dark themes.
+Fully featured search onpage filter with outstanding performance.
+
+Support for light/dark themes (color-scheme saved in local storage).
 
 Click on icon buttons to open a popover with four different sizes.
 
