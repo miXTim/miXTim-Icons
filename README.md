@@ -11,6 +11,7 @@ Follow the guidelines in this post to show as standalone icon, *meaningful* (wit
 
 ## Features
 Fully featured search onpage filter with outstanding performance and support for light/dark themes.
+
 Click on icon buttons to open a popover with four different sizes.
 
 ## Tools
