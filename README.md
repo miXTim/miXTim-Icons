@@ -7,6 +7,8 @@ Download free monochrome SVG icons for commercial use. Completely open source, G
 All served icons are displayed as standalone icon, *decorative* (icons that repeats the information conveyed by text or do not add significant value) and they are optimized with manual compression. 
 Follow the guidelines in this post to show as standalone icon, *meaningful* (with multiple usage examples): https://css-tricks.com/accessible-svgs/
 
+![presentacion](https://github.com/user-attachments/assets/f223cf97-8f9a-4a47-b153-a33c57ddb660)
+
 ## Tools
 **Inkscape** is a Free and open source vector graphics editor for GNU/Linux, Windows and macOS. Inkscape uses the standardized SVG file format as its main format, which is supported by many other applications including web browsers.
 
